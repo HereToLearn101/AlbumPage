@@ -2,13 +2,15 @@
 <html>
     <header>
         <title>A Head Full of Dreams</title>
+        <!-- Internal Style Sheet -->
         <style>
-            td, th {
+            td, th, table {
                 border: 1px solid black;
                 border-collapse: collapse;
                 text-align: center;
             }
         </style>
+        <link href="externalStyle.css" rel="stylesheet" type="text/css" />
     </header>
     <body>
         <div>
@@ -25,10 +27,11 @@
                 <li>Will Champion - Piano</li>
                 <li>Rik Simpson - Producer</li>
             </ul>
-            <table align="center" width="100%">
+            <table width="100%">
                 <caption><h2>Tracks</h2></caption>
                 <thead>
-                    <tr bgcolor="grey">
+                    <!-- In-line style -->
+                    <tr style="background-color: grey;">
                         <th>Track #</th>
                         <th>Track Title</th>
                         <th>Track Length</th>
