@@ -3,39 +3,40 @@
 <header>
     <title>A Head Full of Dreams</title>
     <!-- Internal Style Sheet -->
-    <style>
-        td,
-        th,
-        table {
+    <style type="text/css">
+        td, th, table {
             border: 1px solid black;
             border-collapse: collapse;
             text-align: center;
         }
 
-        h1.titleheading,
-        h2.bandheading,
-        h2.membersheading,
-        h3.yearheading {
+        h1.titleheading, h2.bandheading, h2.membersheading, h3.yearheading {
             text-align: center;
         }
-        /* Ask if written, "font-family: serif" (without the other two inputs), would work too.. */
 
-        h1.titleheading,
-        h2.membersheading {
-            /*font-family: 'Times New Roman', Times, serif;*/
+        /* Ask if written, "font-family: serif" (without the other two inputs), would work too.. */
+        h1.titleheading, h2.membersheading {
             font-family: Arial, Helvetica, sans-serif;
         }
-        /*
-            div.image {
-                background-image: url("images/albumcover.jpg");
-            }*/
+
+        .image {
+            background: url('images/albumcover.jpg') no-repeat center;
+            background-size: 300px 300px;
+            height: 300px; /* needed to increase the height of the div element to help reveal image */
+        }
+
+        li {
+            font-style: italic;
+        }
     </style>
     <link href="externalStyle.css" rel="stylesheet" type="text/css" />
 </header>
 
 <body>
     <div>
-        <div style="background-image: url("images/albumcover.jpg");"></div>
+        <!-- <p><img src="images/albumcover.jpg"></p> -->
+        <div class="image">
+        </div>
         <h1 class="titleheading">A Head Full of Dreams</h1>
         <h2 class="bandheading">Coldplay</h2>
         <h3 class="yearheading">2015</h3>
@@ -54,7 +55,7 @@
             </caption>
             <thead>
                 <!-- In-line style -->
-                <tr style="background-color: grey;">
+                <tr>
                     <th>Track #</th>
                     <th>Track Title</th>
                     <th>Track Length</th>
