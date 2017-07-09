@@ -15,7 +15,7 @@
         }
 
         /* Ask if written, "font-family: serif" (without the other two inputs), would work too.. */
-        h1.titleheading, h2.membersheading {
+        h1.titleheading, h2.membersheading, h2 a {
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -28,6 +28,30 @@
         li {
             font-style: italic;
         }
+
+        h2 a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: rgb(51, 102, 187); /* #3366BB */
+        }
+
+        a:visited {
+            color: rgb(102, 51, 102); /* #663366 */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(11, 0, 128); /* #0B0080 */
+        }
+
+        tbody {
+            font-style: italic;
+        }
     </style>
     <link href="externalStyle.css" rel="stylesheet" type="text/css" />
 </header>
@@ -38,7 +62,7 @@
         <div class="image">
         </div>
         <h1 class="titleheading">A Head Full of Dreams</h1>
-        <h2 class="bandheading">Coldplay</h2>
+        <h2 class="bandheading"><a href="http://coldplay.com/">Coldplay</a></h2>
         <h3 class="yearheading">2015</h3>
         <hr/>
         <h2 class="membersheading">Band members and Producers</h2>
