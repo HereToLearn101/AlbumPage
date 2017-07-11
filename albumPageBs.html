@@ -19,11 +19,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        /*
         .image {
             background: url('images/albumcover.jpg') no-repeat center;
             background-size: 300px 300px;
-            height: 300px; /* needed to increase the height of the div element to help reveal image */
+            height: 300px; /* needed to increase the height of the div element to help reveal image
         }
+        */
 
         li {
             font-style: italic;
@@ -52,19 +54,26 @@
         tbody {
             font-style: italic;
         }
+
+        tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
     </style>
 
-    <!-- Bootstrap. The use of Bootstrap will on albumPageBs.html
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- -->
     <link href="externalStyle.css" rel="stylesheet" type="text/css" />
 </header>
 
 <body>
     <div>
-        <!-- <p><img src="images/albumcover.jpg"></p> -->
-        <div class="image">
+        <div class="container">
+            <img src="images/albumcover.jpg" class="img-circle center-block">
         </div>
         <h1 class="titleheading">A Head Full of Dreams</h1>
         <h2 class="bandheading"><a href="http://coldplay.com/">Coldplay</a></h2>
@@ -78,7 +87,8 @@
             <li>Will Champion - Piano</li>
             <li>Rik Simpson - Producer</li>
         </ul>
-        <table width="100%">
+        <table class="container">
+        <!-- container class is part of Bootstrap -->
             <caption>
                 <h2>Tracks</h2>
             </caption>
